@@ -34,3 +34,7 @@ while times < max_times:
 
     # 残りの回答回数を表示する
     print(f"You have {max_times - times} times to guess.")
+
+    # 正解を表示する
+    if times == max_times:
+        print(f"Game over! The correct number was {correct_number}.")
