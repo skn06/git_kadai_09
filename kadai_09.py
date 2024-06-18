@@ -21,7 +21,7 @@ while times < max_times:
     # 正解かどうかを判定する
     if user_number == correct_number:
         print("Congratulations! Your number is correct.")
-    elif user_number > (correct_number - 10) or user_number < (correct_number + 10):
+    elif abs(user_number - correct_number) < 10:
         print("Close! Try again.")
     elif user_number < (correct_number - 100 ):
         print("Too low! Try again.")
