@@ -32,6 +32,9 @@ while times < max_times:
     elif user_number > (correct_number - 10) and user_number < (correct_number + 10):
         print("Close! Try again.")
 
+    # 正解の場合にゲームを終わらせる
+    if user_number == correct_number:
+        break
 
     # 残りの回答回数を表示する
     print(f"You have {max_times - times} times to guess.")
@@ -39,7 +42,4 @@ while times < max_times:
     # 正解を表示する
     if times == max_times:
         print(f"Game over! The correct number was {correct_number}.")
-
-    # 正解の場合にゲームを終わらせる
-    if user_number == correct_number:
-        break
+        
