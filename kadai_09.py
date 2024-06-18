@@ -12,17 +12,20 @@ while times < max_times:
     # ユーザーのキーボード入力を受け取る
     input_number = input("Enter your guess: ")
 
+    #input_numberを整数に変換する
+    user_number = int(input_number)
+
     # 回答回数をカウントする
     times += 1
 
     # 正解かどうかを判定する
-    if input_number < (correct_number - 100 ):
+    if user_number < (correct_number - 100 ):
         print("Too low! Try again.")
-    elif input_number < correct_number:
+    elif user_number < correct_number:
         print("A little Low! Try again.")
-    elif input_number > (correct_number + 100):
+    elif user_number > (correct_number + 100):
         print("Too high! Try again.")
-    elif input_number > correct_number:
+    elif user_number > correct_number:
         print("A little High! Try again.")
     else:
         print("Congratulations! Your number is correct.")
