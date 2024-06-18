@@ -21,6 +21,8 @@ while times < max_times:
     # 正解かどうかを判定する
     if user_number == correct_number:
         print("Congratulations! Your number is correct.")
+    elif user_number > (correct_number - 10) or user_number < (correct_number + 10):
+        print("Close! Try again.")
     elif user_number < (correct_number - 100 ):
         print("Too low! Try again.")
     elif user_number < correct_number:
@@ -29,8 +31,7 @@ while times < max_times:
         print("Too high! Try again.")
     elif user_number > correct_number:
         print("A little High! Try again.")
-    elif user_number > (correct_number - 10) and user_number < (correct_number + 10):
-        print("Close! Try again.")
+
 
     # 正解の場合にゲームを終わらせる
     if user_number == correct_number:
@@ -42,4 +43,3 @@ while times < max_times:
     # 正解を表示する
     if times == max_times:
         print(f"Game over! The correct number was {correct_number}.")
-        
