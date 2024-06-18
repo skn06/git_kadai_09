@@ -12,3 +12,5 @@ while times < max_times:
     # ユーザーのキーボード入力を受け取る
     input_number = input("Enter your guess: ")
 
+    # 回答回数をカウント
+    times += 1
