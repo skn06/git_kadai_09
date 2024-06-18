@@ -19,7 +19,9 @@ while times < max_times:
     times += 1
 
     # 正解かどうかを判定する
-    if user_number < (correct_number - 100 ):
+    if user_number == correct_number:
+        print("Congratulations! Your number is correct.")
+    elif user_number < (correct_number - 100 ):
         print("Too low! Try again.")
     elif user_number < correct_number:
         print("A little Low! Try again.")
@@ -28,9 +30,8 @@ while times < max_times:
     elif user_number > correct_number:
         print("A little High! Try again.")
     elif user_number > (correct_number - 10) and user_number < (correct_number + 10):
-        print("Close! Tri again.")
-    else:
-        print("Congratulations! Your number is correct.")
+        print("Close! Try again.")
+
 
     # 残りの回答回数を表示する
     print(f"You have {max_times - times} times to guess.")
