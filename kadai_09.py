@@ -27,6 +27,8 @@ while times < max_times:
         print("Too high! Try again.")
     elif user_number > correct_number:
         print("A little High! Try again.")
+    elif user_number > (correct_number - 5) and user_number < (correct_number + 5):
+        print("Close! Tri again.")
     else:
         print("Congratulations! Your number is correct.")
 
