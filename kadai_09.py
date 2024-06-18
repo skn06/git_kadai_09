@@ -16,9 +16,13 @@ while times < max_times:
     times += 1
 
     # 正解かどうかを判定
-    if input_number < correct_number:
+    if input_number < (correct_number - 100 ):
         print("Too low! Try again.")
-    elif input_number > correct_number:
+    elif input_number < correct_number:
+        print("A little Low! Try again.")
+    elif input_number > (correct_number + 100):
         print("Too high! Try again.")
+    elif input_number > correct_number:
+        print("A little High! Try again.")
     else:
         print("Congratulations! Your number is correct.")
