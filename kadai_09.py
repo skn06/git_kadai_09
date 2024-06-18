@@ -39,3 +39,7 @@ while times < max_times:
     # 正解を表示する
     if times == max_times:
         print(f"Game over! The correct number was {correct_number}.")
+
+    # 正解の場合にゲームを終わらせる
+    if user_number == correct_number:
+        break
